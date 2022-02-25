@@ -14,7 +14,7 @@
     <h1>I am <strong>Nikhil Patil</strong></h1>
     <h3>I'm a bsc-cs graduate</h3>
     <p>A challenging position in a technical organization where I can enhance my skills and
-      learn new things and achieve excellence through experienc</p>
+      learn new things and achieve excellence through experience</p>
     <a class="btn btn-danger btn-lg rounded-0 my-3" href="{% static 'portfolio/cv.pdf' %}">Download my resume</a>
   </div>
 </header>
@@ -22,7 +22,7 @@
 <!-- Porfolio Section -->
 <div class="row my-4 text-center">
 
-  <h3>My Projects</h3>
+  <h3>My Projects and Achievements</h3>
   <p></p>
 
   {% for project in projects %}
@@ -36,8 +36,7 @@
         <p>{{ project.description }}</p>
 
         {% if project.url %}
-        <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm" target="__blank" rel="noreferrer">Visit the
-          Project</a>
+        <a href="{{project.url}}" class="btn btn-danger rounded-0 btn-sm" target="__blank" rel="noreferrer">PLEASE-OPEN</a>
         {% endif %}
       </div>
     </div>
